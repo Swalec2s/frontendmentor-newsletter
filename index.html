@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="newsletter-dashboard-sytle.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <script defer type="text/javascript" src="./main.js"></script>
+    <title>Frontend Mentor | Newsletter sign-up form</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-left-side">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="product-info">
+          <div class="list-wrapper">
+            <img src="./assets/images/icon-list.svg" alt="list-item" />
+            <span>Product discovery and building what matters</span>
+          </div>
+          <div class="list-wrapper">
+            <img src="./assets/images/icon-list.svg" alt="list-item" />
+            <span>Measuring to ensure updates are a success</span>
+          </div>
+          <div class="list-wrapper">
+            <img src="./assets/images/icon-list.svg" alt="list-item" />
+            <span>And much more</span>
+          </div>
+        </div>
+        <div class="email-registration">
+          <form
+            id="form"
+            onsubmit="return validateInputs()"
+            action="subscription-success.html"
+          >
+            <span>Email address</span>
+            <div class="input-control">
+              <input
+                id="email"
+                name="email"
+                type="text"
+                placeholder="email@company.com"
+              />
+              <div class="error"></div>
+              <div class="success"></div>
+            </div>
+            <div class="btn-subscribe">
+              <button type="submit">Subscribe to monthly newsletter</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="card-right-side">
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="illustration"
+        />
+      </div>
+    </div>
+  </body>
+</html>

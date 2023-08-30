@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(234, 29%, 20%);
+  font-family: Roboto;
+  min-height: 100vh;
+}
+
+h1 {
+  color: hsl(234, 29%, 20%);
+  font-size: 52px;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.card {
+  padding: 22px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 40px;
+}
+
+.card-left-side {
+  padding: 60px 0px 20px 40px;
+  width: 45%;
+}
+
+.product-info {
+  margin-top: 28px;
+}
+
+.list-wrapper {
+  color: hsl(234, 29%, 20%);
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.email-registration form {
+  display: grid;
+  margin-top: 40px;
+  gap: 8px;
+}
+
+.email-registration span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.email-registration input {
+  border-radius: 8px;
+  border: solid 1px rgb(226, 227, 231);
+  padding: 20px 40px 20px 20px;
+  outline: hsl(234, 29%, 20%);
+  display: block;
+}
+
+::placeholder {
+  color: rgb(197, 198, 200);
+  opacity: 3;
+}
+
+.btn-subscribe button {
+  color: white;
+  font-weight: 700;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  border-radius: 8px;
+  padding: 22px 40px 22px 40px;
+  width: 100%;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.btn-subscribe button:hover {
+  transform: scale(1.1);
+  cursor: grab;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: hsl(4, 100%, 67%);
+}
+
+.input-control .error {
+  margin-top: 4px;
+  color: hsl(4, 100%, 67%);
+  font-size: 12px;
+  height: 13px;
+}
+
+@media (max-width: 950px) {
+  .card {
+    display: grid;
+  }
+
+  .card-left-side {
+    width: 80%;
+  }
+
+  .card-right-side img {
+    display: none;
+  }
+}
