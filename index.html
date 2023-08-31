@@ -9,7 +9,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="newsletter-dashboard-sytle.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,700"
       rel="stylesheet"
@@ -37,26 +37,20 @@
           </div>
         </div>
         <div class="email-registration">
-          <form
-            id="form"
-            onsubmit="return validateInputs()"
-            action="subscription-success.html"
-          >
-            <span>Email address</span>
-            <div class="input-control">
-              <input
-                id="email"
-                name="email"
-                type="text"
-                placeholder="email@company.com"
-              />
-              <div class="error"></div>
-              <div class="success"></div>
-            </div>
-            <div class="btn-subscribe">
-              <button type="submit">Subscribe to monthly newsletter</button>
-            </div>
-          </form>
+          <span>Email address</span>
+          <div class="input-control">
+            <input
+              id="email"
+              name="email"
+              type="text"
+              placeholder="email@company.com"
+            />
+            <div class="error"></div>
+            <div class="success"></div>
+          </div>
+          <div class="btn-subscribe">
+            <button>Subscribe to monthly newsletter</button>
+          </div>
         </div>
       </div>
 
@@ -65,6 +59,21 @@
           src="./assets/images/illustration-sign-up-desktop.svg"
           alt="illustration"
         />
+      </div>
+    </div>
+
+    <div class="card-success">
+      <img src="./assets/images/icon-success.svg" />
+      <h2>Thanks for subscribing!</h2>
+      <p>
+        A confirmation email has been sent to
+        <strong></strong>. Please open it and click the button inside to confirm
+        your subscription.
+      </p>
+      <div>
+        <form id="form" action="index.html">
+          <button type="submit">Dismiss message</button>
+        </form>
       </div>
     </div>
   </body>
